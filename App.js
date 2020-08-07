@@ -5,7 +5,7 @@ export default function App() {
   const [news, setNews] = useState([]);
 
   useEffect(async () => {
-    const response = await fetch('https://newsapi.org/v2/top-headlines?country=br&category=entertainment&apiKey=58c74fcfefa74644bfed2f1b72bce85f');
+    const response = await fetch('https://newsapi.org/v2/top-headlines?country=br&category=entertainment&apiKey=');
     const data = await response.json();
     setNews(data.articles);
     alert('Primeira execução')
